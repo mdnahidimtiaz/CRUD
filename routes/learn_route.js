@@ -2,20 +2,20 @@ const express = require('express');
 const {  fetchAllLearns,
     fetchLearnById,
     addLearn,
-    modifyLearn,
-    removeLearn } = require('../controllers/learn_controller.js');
+    updatedLearn,
+    removedLearn } = require('../controllers/learn_controller.js');
 const router = express.Router();
 
 console.log({  fetchAllLearns,
     fetchLearnById,
     addLearn,
-    modifyLearn,
+    updatedLearn,
     removeLearn});
 
 router.get('/', fetchAllLearns);    
 router.get('/:id',fetchLearnById );  
 router.post('/', addLearn); 
-router.put('/:id',modifyLearn ); 
-router.delete('/:id', removeLearn);
+router.put('/:id',updatedLearn ); 
+router.delete('/:id', removedLearn);
 
 module.exports = router;
