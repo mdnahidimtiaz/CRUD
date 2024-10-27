@@ -10,7 +10,7 @@ console.log({  fetchAllLearns,
     fetchLearnById,
     addLearn,
     updatedLearn,
-    removeLearn});
+    removedLearn});
 
 router.get('/', fetchAllLearns);    
 router.get('/:id',fetchLearnById );  
