@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     console.log(`Server is running on http://localhost:3000`);
   });
 
-  mongoose.connect('mongodb+srv:///test?retryWrites=true&w=majority&appName=End')
+  mongoose.connect('mongodb+srv:')
   .then(() => {
     console.log('Connected to MongoDB!');
   })
